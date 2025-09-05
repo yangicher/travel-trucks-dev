@@ -1,0 +1,27 @@
+.container {
+    background: rgba(0, 0, 0, 0.2);
+    height: 696px;
+}
+
+.homePage {
+    padding-top: 260px;
+    color: var(--color-inputs);
+    font-weight: 600;
+}
+
+.homePage h1 {
+    font-size: 48px;
+}
+
+.homePage p {
+    font-size: 24px;
+    line-height: 1.33;
+}
+
+.button {
+    margin-top: 40px;
+}
+
+.link {
+
+}

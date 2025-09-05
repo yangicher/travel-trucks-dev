@@ -1,0 +1,20 @@
+/* Global variables */
+:root {
+    /* fonts */
+    --font-family: "Inter", sans-serif;
+    --font-style: normal;
+    --font-weight: 500;
+    --font-size: 16px;
+
+    /* colors */
+    --color-main: #101828;
+    --color-text: #475467;
+    --color-white: #FFFFFF;
+    --color-inputs: #F7F7F7;
+    --color-badgets: #F2F4F7;
+    --color-gray: #6C717B;
+    --color-gray-light: #DADDE1;
+    --color-button: #E44848;
+    --color-button-hover: #D84343;
+    --color-rating: #FFC531;
+}

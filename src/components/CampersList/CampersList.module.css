@@ -1,0 +1,11 @@
+.list {
+    width: 888px;
+    overflow: hidden;
+}
+
+.list ul {
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}

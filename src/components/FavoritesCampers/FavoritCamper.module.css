@@ -1,0 +1,17 @@
+.theFavorit {
+    fill: var(--color-button);
+}
+
+.notFavorit {
+    fill: var(--color-main);
+}
+
+.favorit {
+    display: inline-block;
+    margin-left: 8px;
+}
+
+.favorit svg {
+    width: 26px;
+    height: 24px;
+}

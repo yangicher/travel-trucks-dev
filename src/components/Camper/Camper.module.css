@@ -1,0 +1,75 @@
+.container {
+    border: 1px solid var(--color-gray-light);
+    border-radius: 20px;
+    padding: 24px;
+    width: 888px;
+    height: 368px;
+    background: var(--color-white);
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.imgContainer {
+    border-radius: 10px;
+    width: 292px;
+    height: 320px;
+    background-size: cover;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.dataContainer {
+    width: 524px;
+    height: 320px;
+}
+
+.nameContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--color-main);
+}
+
+.nameContainer div {
+    text-wrap: nowrap;
+}
+
+.name, .description {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-right: 8px;
+}
+
+.price {
+    text-wrap: nowrap;
+    display: inline-block;
+}
+
+.rating, .location {
+    color: var(--color-main);
+    margin-right: 16px;
+}
+
+.rateIcon {
+    width: 16px;
+    height: 16px;
+    fill: var(--color-rating);
+    stroke: var(--color-rating);
+    fill-opacity: 1.0;
+    stroke-opacity: 1.0;
+}
+
+.location svg {
+    margin-right: 0.5em;
+}
+
+.description {
+    max-width: 100%;
+}

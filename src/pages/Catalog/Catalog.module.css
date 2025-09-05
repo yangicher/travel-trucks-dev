@@ -1,0 +1,8 @@
+.campers {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+    margin: 48px 0;
+}
