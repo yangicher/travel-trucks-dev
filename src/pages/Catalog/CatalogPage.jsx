@@ -25,7 +25,6 @@ const CatalogPage = () => {
   const [isSearchClicked, setIsSearchClicked] = useState(false);
 
   useEffect(() => {
-    console.log("Catalog Page:", isSearchClicked, status, toastShown);
     if (isSearchClicked && status === "succeeded" && !toastShown) {
       toast.success("Campers loaded successfully!");
       setToastShown(true);
@@ -39,8 +38,6 @@ const CatalogPage = () => {
   }, [status, toastShown, isSearchClicked]);
 
   useEffect(() => {
-    console.log("Catalog Page:", filters);
-
     setVisibleCount(campersPerPage);
     dispatch(fetchCampers(filters));
   }, [dispatch, filters]);

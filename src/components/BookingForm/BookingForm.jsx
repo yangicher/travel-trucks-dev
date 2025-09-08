@@ -39,10 +39,7 @@ const BookingForm = ({ camperId }) => {
   const [startDate, setStartDate] = useState(null);
 
   const handleSubmit = (values, { resetForm }) => {
-    console.log("Booking details:", values);
-
     toast.success("Booking successful!");
-
     resetForm();
   };
 

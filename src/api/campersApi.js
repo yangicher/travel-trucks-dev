@@ -15,11 +15,9 @@ export const fetchCampers = createAsyncThunk(
         }
       }
 
-      console.log("Filtered Params:", filteredParams);
       const { data } = await axios.get(API_BASE_URL, {
         params: filteredParams,
       });
-      console.log("API Response:", data);
       return data.items;
     } catch (error) {
       return rejectWithValue(error.message);
