@@ -2,19 +2,13 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(./bg.webp);
+  background-image: url(/bg.png);
   position: absolute;
   top: -24;
   left: 0;
   width: 1440px;
   height: 696px;
   z-index: -1;
-}
-
-@media only screen and (min-resolution: 192dpi) {
-  .thumb {
-    background-image: url(./bg_2x.webp);
-  }
 }
 
 .container {
