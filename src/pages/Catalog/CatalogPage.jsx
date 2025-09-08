@@ -18,12 +18,14 @@ const CatalogPage = () => {
   const campers = useSelector(selectCampers);
   const filters = useSelector(selectFilters);
   const status = useSelector(selectCampersStatus);
+  const campersPerPage = 4;
 
-  const [visibleCount, setVisibleCount] = useState(4);
+  const [visibleCount, setVisibleCount] = useState(campersPerPage);
   const [toastShown, setToastShown] = useState(false);
   const [isSearchClicked, setIsSearchClicked] = useState(false);
 
   useEffect(() => {
+    console.log("Catalog Page:", isSearchClicked, status, toastShown);
     if (isSearchClicked && status === "succeeded" && !toastShown) {
       toast.success("Campers loaded successfully!");
       setToastShown(true);
@@ -37,7 +39,9 @@ const CatalogPage = () => {
   }, [status, toastShown, isSearchClicked]);
 
   useEffect(() => {
-    setVisibleCount(4);
+    console.log("Catalog Page:", filters);
+
+    setVisibleCount(campersPerPage);
     dispatch(fetchCampers(filters));
   }, [dispatch, filters]);
 
@@ -46,7 +50,7 @@ const CatalogPage = () => {
   };
 
   const handleLoadMore = () => {
-    setVisibleCount((prevCount) => prevCount + 4);
+    setVisibleCount((prevCount) => prevCount + campersPerPage);
   };
 
   return (

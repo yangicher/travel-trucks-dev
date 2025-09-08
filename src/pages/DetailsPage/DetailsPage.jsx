@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchCamperDetails } from "../../redux/campers/operations";
+import { fetchCamperDetails } from "../../api/campersApi";
 import {
   selectCamperDetails,
   selectCamperDetailsStatus,
-} from "../../redux/campers/selectors";
+} from "../../redux/selectors";
 import Gallery from "../../components/Gallery/Gallery";
 import Reviews from "../../components/Reviews/Reviews";
 import BookingForm from "../../components/BookingForm/BookingForm";

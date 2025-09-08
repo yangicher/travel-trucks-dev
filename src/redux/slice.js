@@ -47,6 +47,7 @@ const campersSlice = createSlice({
         }
       })
       .addCase(fetchCampers.rejected, (state) => {
+        console.log("fetchCampers.rejected ", state);
         state.status = "failed";
       })
       .addCase(fetchCamperDetails.pending, (state) => {
@@ -57,6 +58,8 @@ const campersSlice = createSlice({
         state.camperDetails = action.payload;
       })
       .addCase(fetchCamperDetails.rejected, (state) => {
+        console.log("fetchCamperDetails.rejected ", state);
+
         state.camperDetailsStatus = "failed";
         state.camperDetails = null;
       });
