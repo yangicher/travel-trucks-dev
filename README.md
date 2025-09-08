@@ -5,8 +5,8 @@ This is a simple single-page application (SPA) for searching and viewing campers
 Follow these steps to get the application up and running on your local machine.
 1. **Clone the Repository**
 ```bash
-   git clone https://github.com/SergeyPoly/goit-neo-react-final-project.git
-   cd goit-neo-react-final-project
+   git clone https://github.com/yangicher/travel-trucks-dev.git
+   cd travel-trucks-dev
 ```
 2. **Install Dependencies**
 ```bash
