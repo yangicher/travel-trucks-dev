@@ -11,7 +11,7 @@ import Reviews from "../../components/Reviews/Reviews";
 import BookingForm from "../../components/BookingForm/BookingForm";
 import Features from "../../components/Features/Features";
 import LocationFormatter from "../../components/LocationFormatter/LocationFormatter";
-import Icon from "../../../public/icons/Icon";
+import Icon from "../../assets/icons/Icon";
 import css from "./DetailsPage.module.css";
 import Loader from "../../components/Loader/Loader";
 

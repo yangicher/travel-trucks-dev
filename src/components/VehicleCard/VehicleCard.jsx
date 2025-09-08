@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import Icon from "../../../public/icons/Icon";
+import Icon from "../../assets/icons/Icon";
 import { categories } from "../../data/vehicleData";
 import LocationFormatter from "../../components/LocationFormatter/LocationFormatter";
 import { toggleFavorite } from "../../redux/slice";

@@ -1,5 +1,5 @@
 import css from "./FilterPanel.module.css";
-import Icon from "../../../public/icons/Icon";
+import Icon from "../../assets/icons/Icon";
 import { useState, useCallback } from "react";
 import { categories, vehicleTypes } from "../../data/vehicleData";
 import { Formik, Field, Form, ErrorMessage } from "formik";

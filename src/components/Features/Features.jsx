@@ -1,4 +1,4 @@
-import Icon from "../../../public/icons/Icon";
+import Icon from "../../assets/icons/Icon";
 import { categories } from "../../data/vehicleData";
 import css from "./Features.module.css";
 
