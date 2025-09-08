@@ -1,4 +1,4 @@
-import Icon from "../../assets/icons/Icon";
+import Icon from "../../../public/icons/Icon";
 import css from "./Reviews.module.css";
 
 const Reviews = ({ reviews }) => {
