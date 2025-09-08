@@ -6,7 +6,19 @@ const Navigation = () => {
   return (
     <nav className={css.nav}>
       <div className={css.logoContainer}>
-        <Icon name="icon-logo" width={136} height={16} className={css.logo} />
+        <NavLink
+          to="/"
+          className={({ isActive }) =>
+            isActive ? `${css.link} ${css.activeLink}` : css.link
+          }
+        >
+          <Icon
+            name="icon-logo"
+            width={136}
+            height={16}
+            className={css.logo}
+          />
+        </NavLink>
       </div>
       <div className={css.wrapper}>
         <NavLink
